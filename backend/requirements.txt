@@ -1,7 +1,5 @@
 flask
-flask-sqlalchemy
 flask-cors
-flask-mysqldb
 pymysql
 gunicorn
 python-dotenv
