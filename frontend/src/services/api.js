@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-// Ini alamat URL jembatan menuju Flask Backend kamu
-const API_URL = 'http://localhost:5000/api';
+// Otomatis pakai URL Railway kalau online, localhost kalau di laptop
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
 
 // 1. Fungsi untuk mengambil semua data transaksi dari MySQL
 export const getTransactions = async () => {
